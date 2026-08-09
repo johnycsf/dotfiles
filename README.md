@@ -21,3 +21,7 @@ eval "$(starship init bash)"
 ```
 
 5. Open a new terminal.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
