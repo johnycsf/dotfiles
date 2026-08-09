@@ -71,6 +71,8 @@ crust = "#11111b"
 [os]
 disabled = false
 style = "bg:surface0 fg:text"
+# Use a non-Mono Nerd Font (e.g. "MesloLGS Nerd Font") so OS icons are not scaled down.
+format = "[ $symbol]($style)"
 
 [os.symbols]
 Windows = "󰍲"
