@@ -6,13 +6,13 @@ Works with **bash** and **zsh**.
 
 ## Quick install
 
-1. Install Starship: https://starship.rs/guide/#%F0%9F%9A%80-installation
-2. Use a **non-Mono** Nerd Font in your terminal (e.g. `MesloLGS Nerd Font`) so OS icons are full size
-3. Run the installer (configures every shell it finds):
+Use a **non-Mono** Nerd Font in your terminal (e.g. `MesloLGS Nerd Font`) so OS icons are full size, then run:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/johnycsf/dotfiles/main/install.sh | bash
 ```
+
+That installs Starship if needed, drops in this config, and wires up bash and/or zsh.
 
 Or clone and run locally:
 
@@ -24,9 +24,12 @@ cd dotfiles
 ./install.sh zsh    # zsh only
 ```
 
-4. Open a new terminal (or `source ~/.bashrc` / `source ~/.zshrc`).
+Open a new terminal (or `source ~/.bashrc` / `source ~/.zshrc`).
 
 ## Manual install
+
+1. Install Starship: https://starship.rs/guide/#%F0%9F%9A%80-installation
+2. Copy the config:
 
 ```bash
 mkdir -p ~/.config
@@ -34,7 +37,7 @@ curl -fsSL https://raw.githubusercontent.com/johnycsf/dotfiles/main/starship.tom
   -o ~/.config/starship.toml
 ```
 
-Then add **one** of these to your shell rc:
+3. Add **one** of these to your shell rc:
 
 **bash** (`~/.bashrc`):
 

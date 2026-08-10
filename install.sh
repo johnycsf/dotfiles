@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install starship.toml and wire up bash and/or zsh.
+# Install Starship (if missing), install starship.toml, and wire up bash and/or zsh.
 set -euo pipefail
 
 REPO_RAW="https://raw.githubusercontent.com/johnycsf/dotfiles/main/starship.toml"
@@ -7,10 +7,25 @@ MARKER="# starship (johnycsf/dotfiles)"
 
 die() { echo "error: $*" >&2; exit 1; }
 
-need_starship() {
-  if ! command -v starship >/dev/null 2>&1; then
-    die "starship not found. Install it first: https://starship.rs/guide/#%F0%9F%9A%80-installation"
+ensure_starship() {
+  if command -v starship >/dev/null 2>&1; then
+    echo "Starship already installed: $(command -v starship) ($(starship --version 2>/dev/null | head -1))"
+    return 0
   fi
+
+  command -v curl >/dev/null 2>&1 || die "curl is required to install starship"
+
+  echo "Starship not found; installing via https://starship.rs/install.sh ..."
+  # -y skips the confirmation prompt (non-interactive / curl | bash safe)
+  curl -fsSL https://starship.rs/install.sh | sh -s -- -y
+
+  # Common install locations if the current shell PATH is stale
+  export PATH="${HOME}/.local/bin:/usr/local/bin:${PATH}"
+
+  if ! command -v starship >/dev/null 2>&1; then
+    die "starship install finished but binary not found on PATH; try opening a new terminal and re-running"
+  fi
+  echo "Installed starship: $(command -v starship) ($(starship --version 2>/dev/null | head -1))"
 }
 
 install_config() {
@@ -80,7 +95,7 @@ detect_targets() {
 main() {
   local mode="${1:-both}" shell
 
-  need_starship
+  ensure_starship
   install_config
 
   while IFS= read -r shell; do
