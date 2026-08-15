@@ -9,7 +9,7 @@ Works with **bash** and **zsh**.
 Use a **non-Mono** Nerd Font in your terminal (e.g. `MesloLGS Nerd Font`) so OS icons are full size, then run:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/johnycsf/dotfiles/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/johnycsf/Starship-Catppuccin-Dotfiles/main/install.sh | bash
 ```
 
 That installs Starship if needed, drops in this config, and wires up bash and/or zsh.
@@ -17,8 +17,8 @@ That installs Starship if needed, drops in this config, and wires up bash and/or
 Or clone and run locally:
 
 ```bash
-git clone https://github.com/johnycsf/dotfiles.git
-cd dotfiles
+git clone https://github.com/johnycsf/Starship-Catppuccin-Dotfiles.git
+cd Starship-Catppuccin-Dotfiles
 ./install.sh        # bash and/or zsh
 ./install.sh bash   # bash only
 ./install.sh zsh    # zsh only

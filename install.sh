@@ -2,8 +2,8 @@
 # Install Starship (if missing), install starship.toml, and wire up bash and/or zsh.
 set -euo pipefail
 
-REPO_RAW="https://raw.githubusercontent.com/johnycsf/dotfiles/main/starship.toml"
-MARKER="# starship (johnycsf/dotfiles)"
+REPO_RAW="https://raw.githubusercontent.com/johnycsf/Starship-Catppuccin-Dotfiles/main/starship.toml"
+MARKER="# starship (johnycsf/Starship-Catppuccin-Dotfiles)"
 
 die() { echo "error: $*" >&2; exit 1; }
 
