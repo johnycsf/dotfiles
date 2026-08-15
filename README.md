@@ -4,6 +4,8 @@ My [Starship](https://starship.rs/) prompt config (Catppuccin Mocha).
 
 Works with **bash** and **zsh**.
 
+![Starship Catppuccin prompt preview](assets/prompt-preview.png)
+
 ## Quick install
 
 Use a **non-Mono** Nerd Font in your terminal (e.g. `MesloLGS Nerd Font`) so OS icons are full size, then run:
