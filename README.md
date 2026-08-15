@@ -1,5 +1,7 @@
 # Starship with Catppuccin theme
 
+![Repobeats analytics image](https://repobeats.axiom.co/api/embed/ce842a52094ac581de623718f7235a95de99c767.svg "Repobeats analytics image")
+
 My [Starship](https://starship.rs/) prompt config (Catppuccin Mocha).
 
 Works with **bash** and **zsh**.
@@ -53,9 +55,6 @@ eval "$(starship init bash)"
 eval "$(starship init zsh)"
 ```
 
-## Repository activity
-
-![Repobeats analytics image](https://repobeats.axiom.co/api/embed/ce842a52094ac581de623718f7235a95de99c767.svg "Repobeats analytics image")
 
 ## Contributing
 
