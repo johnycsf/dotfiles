@@ -33,7 +33,7 @@ Open a new terminal (or `source ~/.bashrc` / `source ~/.zshrc`).
 
 ```bash
 mkdir -p ~/.config
-curl -fsSL https://raw.githubusercontent.com/johnycsf/dotfiles/main/starship.toml \
+curl -fsSL https://raw.githubusercontent.com/johnycsf/Starship-Catppuccin-Dotfiles/main/starship.toml \
   -o ~/.config/starship.toml
 ```
 
