@@ -1,4 +1,4 @@
-# starship
+# Starship with Catppuccin theme
 
 My [Starship](https://starship.rs/) prompt config (Catppuccin Mocha).
 
