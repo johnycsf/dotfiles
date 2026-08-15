@@ -53,6 +53,10 @@ eval "$(starship init bash)"
 eval "$(starship init zsh)"
 ```
 
+## Repository activity
+
+![Repobeats analytics image](https://repobeats.axiom.co/api/embed/ce842a52094ac581de623718f7235a95de99c767.svg "Repobeats analytics image")
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
