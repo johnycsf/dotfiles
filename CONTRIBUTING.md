@@ -1,35 +1,37 @@
 # Contributing
 
-Thanks for wanting to help. This repo is a simple [Starship](https://starship.rs/) prompt config (Catppuccin Mocha) for everyday terminals — bash and zsh.
+Thanks for wanting to help. These projects are meant to stay simple for homelab beginners.
 
-## How to contribute
+## Disclaimer
+
+See [DISCLAIMER.md](DISCLAIMER.md). By using or contributing to this repository, you acknowledge that the author is **not responsible** for any damage, data loss, outages, security issues, or other consequences from using this software.
+
+## Reporting bugs
+
+If you encounter an error or unexpected behavior, please use GitHub (that is the supported contribution path):
+
+1. Search [existing Issues](../../issues) for a duplicate.
+2. Open a **new Issue** and include:
+   - What you were trying to do
+   - Exact commands you ran
+   - Full error output
+   - OS and relevant tool versions (for example Docker / Compose, kubectl / Helm, or shell / Starship when applicable)
+   - Whether you used `./install.sh`, `./manage.sh`, or manual steps
+3. Optionally open a **Pull Request** with a fix (see below).
+
+Do not expect private email or DM troubleshooting. Bug reports and fixes belong on GitHub Issues and Pull Requests.
+
+## How to contribute (Pull Requests)
 
 1. Fork the repository
 2. Create a branch for your change
 3. Make the smallest change that solves the problem
-4. Test in a real terminal:
-   - Copy or symlink `starship.toml` to `~/.config/starship.toml`
-   - Or run `./install.sh` from your fork
-   - Open a new shell (or `source ~/.bashrc` / `source ~/.zshrc`) and confirm the prompt still looks right
-5. Open a Pull Request that explains:
-   - what felt wrong or missing
-   - what you changed
-   - how you verified it (shell + terminal + font if relevant)
+4. Test on a real machine when changing install or deploy scripts
+5. Open a Pull Request that explains what broke, what you changed, and how you verified it
 
 ## Guidelines
 
-- Keep the setup beginner-friendly — `./install.sh` and the README curl one-liner should keep working
-- Prefer clarity over cleverness in `starship.toml` and docs
-- Do not commit personal machine names, private paths, or secrets
-- If you change modules or colors, say why (readability, icons, Catppuccin consistency, etc.)
-- Use a **non-Mono** Nerd Font when checking icons (e.g. `MesloLGS Nerd Font`) so OS glyphs stay full size
-
-## Issues
-
-Bug reports and ideas are welcome. Include:
-
-- OS and terminal app (e.g. Fedora + Ptyxis, macOS + iTerm2)
-- Shell (`bash` / `zsh`) and Starship version (`starship --version`)
-- Font in use (if icons look wrong)
-- Exact command you ran (if install-related)
-- Error output or a screenshot of the prompt
+- Prefer clarity over cleverness
+- Keep one-command installs working (`./install.sh` / `./manage.sh` where present)
+- Do not commit secrets, tokens, or personal hostnames/IPs
+- Match existing file style
