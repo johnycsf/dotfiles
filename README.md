@@ -2,6 +2,9 @@
 
 ![Repobeats analytics image](https://repobeats.axiom.co/api/embed/ce842a52094ac581de623718f7235a95de99c767.svg "Repobeats analytics image")
 
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/johnycsf)
+
 My [Starship](https://starship.rs/) prompt config (Catppuccin Mocha).
 
 Works with **bash** and **zsh**.
@@ -59,3 +62,12 @@ eval "$(starship init zsh)"
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Support this work
+
+If these homelab tools save you time, please consider sponsoring:
+
+[![Sponsor johnycsf](https://img.shields.io/badge/GitHub%20Sponsors-Donate-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/johnycsf)
+
+👉 **[github.com/sponsors/johnycsf](https://github.com/sponsors/johnycsf)** — tips and monthly support keep these beginner-friendly stacks maintained.
+
